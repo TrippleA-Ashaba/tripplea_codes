@@ -1,16 +1,31 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="{% static 'src/styles.css' %}" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet" />
 		<title>TrippleA - Codes</title>
 	</head>
 	<body>
-		{% block content %}
-		<!--  -->
-		{% endblock %}
+		<div class="my-5 text-center text-2xl text-stone-800 md:text-3xl">
+			<h1 style="font-family: Pacifico, cursive">TrippleA Codes</h1>
+		</div>
+		<div class="mx-auto md:w-7/12">
+			<!-- navbar -->
+			{% include 'partials/navbar.html' %}
+
+			<!-- MAIN Content -->
+			<div class="main">
+				{% block content %}
+				<!--  -->
+				{% endblock %}
+			</div>
+		</div>
 	</body>
 </html>
