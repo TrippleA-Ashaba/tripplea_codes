@@ -1,169 +1,28 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% load static %}
 <!--  -->
 {% block content %}
-<h1>Django + Tailwind CSS</h1>
-<p>
-	Skip to content DEV Community Search... Log in Create account 35 Jump to Comments 434 Save Cover
-	image for 10 Minimal Portfolio Examples for Web Developers Who Aren’t Good at Design Scrimba
-	profile imageAlex Booker Alex Booker for Scrimba Posted on Jun 29, 2022 • Originally published
-	at scrimba.com 235 64 10 Minimal Portfolio Examples for Web Developers Who Aren’t Good at Design
-	# webdev # css # javascript Not all web developers are good at design, and that is OK! In the
-	real world, you will often work with a designer on your team to convert their designs into real,
-	responsive websites anyway. With that said, to get a web developer job, you’ll need your
-	portfolio to stand out and look good. Collaborating with a designer isn’t usually an option at
-	this stage, so what do you do? Templates are great in a pinch, but it might be a bit awkward if
-	two candidates apply with the same template 😬. This leaves the question as to what to do if
-	you’re not keen on a generic template but don’t have much design practice either 🤔. The trick
-	is to keep it minimal and iterate! Remember, the most important thing about your project
-	portfolio is your projects. While the design should be pleasing, it should also get out of the
-	way. You can always add pizzazz later 🕺🏻! To help you build a minimal, effective portfolio,
-	we’ve curated 10 minimal web developer portfolio examples for you to learn from. Look out for
-	the 🎨 design tips sections where we highlight some of the basic design principles you can
-	specifically notice! Obviously, these creators wouldn’t like it very much if you copied their
-	designs exactly (don’t do that 🙅🏻), but let them be your inspiration! It’s not uncommon for new
-	creatives to mix and match their favorite 3-4 works to make something unique. Delba De Oliveria
-	GIF"Hello! I'm Delba, a developer based in England", Delba's portfolio website reads Delba’s
-	project-based portfolio is remarkable. She even made a YouTube video about it! Understandably,
-	Delba has since updated her website to be more focused on her blog, so the live version looks a
-	bit different today (still looks great.) Make sure to check out the original, minimal-looking
-	version by flicking through the video. 🎨 Design tip: Even though Delba’s website is fairly
-	minimal, she sparks joy in the user with delightful highlighter animation using a JavaScript
-	library called Rough Notation. Alex Pate Alex's portfolio in a desktop orientation Alex's
-	portfolio in a mobile orientation Notice how Alex uses a fairly narrow single-column layout and
-	lists only a few menu items at the top. This removed the need to collapse columns or introduce a
-	hamburger menu on mobile, allowing Alex to ship his website sooner. The Selected Work section,
-	though minimal, is beautifully designed and effective: The Selected Work section of Alex's
-	portfolio Alex understands someone looking at a portfolio is probably browsing and too many
-	options is overwhelming. He makes it easy by showcasing only his 3 most recent works. For
-	everything else, you can click View All Work →. 🎨 Design tip: Through introducing borders in
-	the project screenshots, Alex introduced a pop of colour, while also making the design
-	breathable. Lee Robinson Lee's website in light mode Lee's website in dark mode 🎨 Design tip:
-	Because the background and Lee’s photo are grey, the gradient really pops! Franklina Amoah A
-	screenshot of Franklina's portfolio, featuring her photo and bio. "A UX Designer with 4 years of
-	experience designing complex scalable and usable products for my users.", Franklina's portfolio
-	reads Notice how when you press View case study, Franklkina links to a PDF. This is extremely
-	smart because it saves time and allowed Franklina to put her portfolio in front of employers
-	sooner. Brian Lovin A screenshot of Brian's Wiki-inspired minimal portfolio Brian takes a novel
-	approach to a personal website with this Wiki-style navigation. 🎨 Design tip: Using an icon
-	pack is a great way to introduce consistency regardless of your design skill. Justin Chi A
-	screenshot of Justin's portfolio, featuring his information in a terminal in JavaScript notation
-	Smart idea to express your personal information in code! 🎨 Design tip: Minimal doesn’t
-	necessarily mean black and white. Justin uses a muted, pastel-y colour scheme to great effect.
-	Nick McMillian A screenshot of Nick's black and white portfolio with a pop of color Darius
-	Foroux A screenshot of Darius's website Ah, you got me! Darius is a writer, not a developer but
-	his website is a great example of getting out of the way of the important stuff. Josh Comeau A
-	screnshot of Josh's portfolio, featuring an illustration of Josh and his most recent posts
-	Josh’s portfolio is not quite as minimal as the others, but it deserves an honourable mention.
-	After all, the idea for this post was sparked during our conversation on The Scrimba Podcast. It
-	has delightful interactions: GIFA screen recording hearting one of Josh's posts and showing off
-	the delightful animation Josh wrote all about how he built his blog here, and includes
-	screenshots of his previous iterations, which aren’t quite as polished: An early iteration of
-	Josh's portfolio, which is much simpler but equally effective Coner Dewey A screenshot of
-	Coner's homepage, featuring his picture and a short bio A screenshot of Coner's about page, with
-	more information about him While Coner’s homepage puts an emphasis on blogs, the “recent posts”
-	section could be repurposed to feature projects. Top comments (35) Subscribe pic Add to the
-	discussion jonrandy profile image Jon Randy 🎖️ • Jun 30 '22 With that said, to get a web
-	developer job, you’ll need your portfolio to stand out and look good This is a total myth. You
-	really do not need a portfolio at all. An interesting and active GitHub/GitLab/whatever account
-	is a far better way to gauge someone as a developer. All of the best developers I've hired have
-	not had portfolios. It's also interesting to note that of the candidates I've interviewed who
-	did have a portfolio (by far the minority) - it actually counted against them in more than one
-	case. 31 likes Like Reply horrorofpartybeach profile image Emma • Jun 30 '22 I agree it's not
-	always necessary to have a portfolio, I've still not built one and it's never been a problem in
-	interviews. I've thought of it as a 'nice to have' though, so I'm curious to know how it counted
-	against some of the candidates you interviewed? 7 likes Like Reply jonrandy profile image Jon
-	Randy 🎖️ • Jun 30 '22 • Edited on Jun 30 Over-engineering, JS errors, failing to work on some
-	browsers, excessive bloat, inappropriate choice of technology... etc. 10 likes Like Thread
-	horrorofpartybeach profile image Emma • Jun 30 '22 Ah I see, yea that makes sense. I've come
-	across a few portfolio sites where it felt more like an opportunity to try out new tech or
-	ideas, rather than what's appropriate for the portfolio. 6 likes Like Reply bookercodes profile
-	image Alex Booker • Jun 30 '22 You make a good point! I will try and find a different way to
-	phrase it. I believe a well-executed portfolio can help you showcase your projects, tell your
-	story, make you more memorable, create talking points in an interview, and stand out. Equally,
-	if your portfolio is too scrappy, that can count against you. As much as a Hiring Manager might
-	try to remove their bias from the situation, it's hard not to hold a candidate's portfolio to
-	the high standard they're going to expect when you contribute to their website. This was
-	actually the motivation behind this post. Oftentimes, we're too ambitious with our portfolios
-	and ship something incomplete or otherwise less than ideal. That can bias a Hiring Manager and
-	fundamentally get in the way of what really matters as a web developer, which is your
-	experience, projects, and value proposition. 3 likes Like Reply andrewbaisden profile image
-	Andrew Baisden • Jul 1 '22 Yeah, I would have to agree even though I like having a portfolio
-	website I see more value in the projects somebody has on their GitHub. A portfolio is like a
-	portal to your work much like a Linktree. 4 likes Like Reply pyrsmk profile image Aurélien
-	Delogu • Jun 30 '22 I completely agree with you. I saw once someone arguing that a candidate
-	should have a very active StackOverflow account (aside of its git repos) to being eligible for a
-	job position. A bit extreme IMO, ahah 1 like Like Reply aburd profile image Aaron B • Jul 4 '22
-	Maybe chill a little bit. 2 likes Like Reply maddy profile image Maddy • Jul 5 '22 I agree with
-	this, and I'm not sure where this emphasis on having a portfolio comes from. Not even a blog is
-	actually needed to land a job in tech (and I say this as an active tech-blogger, need to be
-	honest here 😁). 1 like Like Reply ravavyr profile image Ravavyr • Jul 2 '22 I'll add to that,
-	that the best developers we've hired all had pet projects and love doing this stuff for fun or
-	at least as a hobby. 1 like Like Reply jonrandy profile image Jon Randy 🎖️ • Jul 3 '22 Yup, this
-	is also often true. Evidence of which can usually be seen in their repos 1 like Like Reply
-	nataliedeweerd profile image 𝐍𝐚𝐭𝐚𝐥𝐢𝐞 𝐝𝐞 𝐖𝐞𝐞𝐫𝐝 • Jul 1 '22 Hey Jon. Interested to hear why it
-	counted against them? 1 like Like Reply jonrandy profile image Jon Randy 🎖️ • Jul 1 '22 I
-	answered that one already 1 like Like Reply adam_cyclones profile image Adam Crockett • Jun 30
-	'22 10 years, 2 GREAT jobs, 0 portfolio The answer is 12 😏 2 likes Like Reply spaboi profile
-	image SPABOI • Jun 30 '22 • Edited on Jun 30 Definitely. You web portfolio literally describes
-	your whole coding knowledge in one project. So it’s really important to make it stand out,
-	unique and amazing. I agree with you completely 👍 1 like Like Reply atulcodex profile image 🚩
-	Atul Prajapati 🇮🇳 • Jun 30 '22 Looks awesome 💝 2 likes Like Reply bookercodes profile image
-	Alex Booker • Jun 30 '22 They look great, right? 2 likes Like Reply ashraful profile image
-	Mohamad Ashraful Islam • Jun 30 '22 Hello, How about mine? I am not the designer yet. I took
-	from someone else's ashraful.dev 3 likes Like Reply bookercodes profile image Alex Booker • Jun
-	30 '22 I think it looks wonderful, especially the dark mode! 1 like Like Reply ashraful profile
-	image Mohamad Ashraful Islam • Jun 30 '22 • Edited on Jun 30 You will get the source here
-	(github.com/iashraful/ashraful.dev). It's built on Nuxt(Vue SSR Framework) 1 like Like Reply
-	dephraiim profile image Ephraim Atta-Duncan • Jul 2 '22 Anyone to review mine for me?
-	astrosaurus.me 4 likes Like Reply ashleymays profile image Ashley Mays • Jul 4 '22 Looks great!
-	I really like the gradient and the minimal style :) 1 like Like Reply thomasmorice profile image
-	Thomas Morice • Jul 1 '22 I wish I could be listed in one of those someday. It took me quite
-	some time but it was a lot of fun: thomasmorice.com 3 likes Like Reply ashleymays profile image
-	Ashley Mays • Jul 3 '22 dude this is insane! there's so much detail and I love how the
-	animations are nice but not too distracting 2 likes Like Reply thomasmorice profile image Thomas
-	Morice • Jul 5 '22 Thank you so much! Really appreciate your feedback :) 1 like Like Reply
-	mike_andreuzza profile image Michael Andreuzza • Jul 3 '22 • Edited on Jul 3 Talking about
-	minimal,... Check out mine: michaelandreuzza.com 3 likes Like Reply khokon profile image Khokon
-	M. • Jun 30 '22 If they aren't good at design, then I can't spell the D of design :) 1 like Like
-	Reply qiqetes profile image Enric Llopis Fabra • Jul 6 '22 I would like to add mine ellopis.dev
-	1 like Like Reply gulshanaggarwal profile image Gulshan Aggarwal • Jul 3 '22 Nice, resources! A
-	good one for people like me who are not so good at designing part. 1 like Like Reply obaino82
-	profile image Obaino82 • Jul 1 '22 Nice one 1 like Like Reply andrewbaisden profile image Andrew
-	Baisden • Jul 1 '22 These are quite inspirational to look at. 1 like Like Reply lukeecart
-	profile image Luke Cartwright • Jun 30 '22 These are amazing! 1 like Like Reply maheshmuttinti
-	profile image Mahesh Muttinti • Jul 1 '22 What about mine? maheshmuttintidev.in Like Reply aburd
-	profile image Aaron B • Jul 4 '22 It's a good start, but a little light on content though! Also,
-	the colors are a little too bright for me. But it might be personal preference. I like the
-	everything else though! 1 like Like Reply jonasstjerne profile image Jonas Stjerne • Jul 17 '22
-	Love these! Created my own with some unique elements. Got inspiration from a lot of awesome
-	portfolios jonasstjerne.com 1 like Like Reply View full discussion (35 comments) Code of Conduct
-	• Report abuse DEV Community JavaScript Digest 1. 20 Github Repositories Every Developer Should
-	Bookmark Discover 20 must-have bookmarked repositories on GitHub which cover a range of topics
-	from free eBooks, design resources, open-source projects, and curated lists. These resources are
-	essential for every developer looking to improve their skill set and work on minimalistic,
-	powerful projects expertly. 2. Top 5 MERN Stack Projects to Improve Your Practical Understanding
-	Boost your skills and build up hands-on experience as a MERN Stack developer through these five
-	interesting beginner projects. The article emphasizes that project-based learning not only
-	develops practical understanding but also assists MERN stack developers in landing work after
-	building their portfolios using these sought-after skills. 3. Why JavaScript is a
-	Prototype-based OOP Delve deep into understanding the unique prototype-based object-oriented
-	programming paradigm in JavaScript. Compared to class-based languages like C++ and Java,
-	JavaScript differs fundamentally in how it handles inheritance and relationships between
-	objects. Discover why this distinction is important, and learn about its impact on OOP and
-	practical examples. Read next sirneij profile image Authentication system using rust (actix-web)
-	and sveltekit - CORS and Frontend Integration John Idogun - Apr 26 whizfactor profile image
-	Getting Started with MedusaJS: A Basic Tutorial Whizfactor - Apr 15 alexisintech profile image I
-	attended my first tech conference... before even getting my first tech job 😳 Alexis Aguilar -
-	Apr 24 zvone187 profile image 45 ways to break an API server (negative tests with examples)
-	zvone187 - Apr 19 Scrimba Follow More from Scrimba 30 inspiring web developer portfolio examples
-	you have never seen before #webdev #portfolio #inspiration 11 reasons why you should become a
-	web developer (that aren’t just the high salary) #webdev #career #developer 6 Reasons to learn
-	and use React in 2023 #react #webdev #2023 DEV Community 🌚 Life is too short to browse without
-	dark mode You can customize your theme, font, and more by creating your DEV account. DEV
-	Community — A constructive and inclusive social network for software developers. With you every
-	step of your journey. Home Listings Podcasts Videos Tags FAQ Forem Shop Sponsors About Contact
-	Guides Software comparisons Code of Conduct Privacy Policy Terms of use Built on Forem — the
-	open source software that powers DEV and other inclusive communities. Made with love and Ruby on
-	Rails. DEV Community © 2016 - 2023.
-</p>
+
+<div class="md:flex">
+	<div class="mt-5">
+		<h2 class="font-bold">
+			Hey! I'm Albert, a full stack developer and writer based in Uganda.
+		</h2>
+		I enjoys creating things for the internet. I am Software Engineering enthusiast who is very
+		eager learn and always ready to share my knowledge. My career goal is to become the person
+		everyone runs to for a solution. My interest in web development started back in 2022 when I
+		decided to try editing a resume template during the pandemic lockdown — turns out trying to
+		center a div taught me a lot about HTML & CSS! Fast-forward to today, and I have had the
+		privilege of joining a Bootcamp team where I have worked on industrial level projects, built
+		and maintained websites for people and companies. My focus nowadays is on the Backend in
+		Python - Django and JavaScript - Node. I have also recently launched a Blog where I document
+		my programming journey in this competitive sector. With a few tutorials of new things I get
+		to learn along the way.
+	</div>
+	<div>
+		<div class="ml-9 w-36">
+			<img class="object-fit rounded-full" src="{% static 'images/hero.png' %}" alt="" />
+		</div>
+	</div>
+</div>
+
 {% endblock content %}

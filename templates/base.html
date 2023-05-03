@@ -4,24 +4,36 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Tailwind -->
 		<script src="https://cdn.tailwindcss.com"></script>
+
+		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&display=swap"
 			rel="stylesheet" />
+
+		<!-- Remix Icons -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+			rel="stylesheet" />
+		<!--  -->
 		<title>TrippleA - Codes</title>
 	</head>
 	<body>
-		<div class="my-5 text-center text-2xl text-stone-800 md:text-3xl">
-			<h1 style="font-family: Pacifico, cursive">TrippleA Codes</h1>
+		<div class="my-7 text-center text-2xl text-stone-800 md:text-3xl">
+			<h1 style="font-family: Over the Rainbow, cursive" class="font-bold">
+				Albert Ashaba Aheebwa
+			</h1>
 		</div>
-		<div class="mx-auto md:w-7/12">
+		<div class="mx-auto md:w-9/12">
 			<!-- navbar -->
 			{% include 'partials/navbar.html' %}
 
 			<!-- MAIN Content -->
-			<div class="main">
+			<div class="mx-auto md:w-7/12">
 				{% block content %}
 				<!--  -->
 				{% endblock %}
