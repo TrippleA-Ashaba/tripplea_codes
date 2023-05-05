@@ -28,15 +28,20 @@
 				<a href="{% url 'home' %}"> Albert Ashaba Aheebwa </a>
 			</h1>
 		</div>
-		<div class="container mx-auto p-10">
-			<!-- navbar -->
-			{% include 'partials/navbar.html' %}
+		<div class="container mx-auto">
+			<div class="px-10">
+				<!-- navbar -->
+				{% include 'partials/navbar.html' %}
 
-			<!-- MAIN Content -->
-			<div class="mx-auto lg:w-8/12">
-				{% block content %}
-				<!--  -->
-				{% endblock %}
+				<!-- MAIN Content -->
+				<div class="mx-auto lg:w-8/12">
+					{% block content %}
+					<!--  -->
+					{% endblock %}
+				</div>
+
+				<!-- FOOTER -->
+				{% include 'partials/footer.html' %}
 			</div>
 		</div>
 	</body>
