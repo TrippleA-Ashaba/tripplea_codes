@@ -7,6 +7,7 @@
 
 		<!-- Tailwind -->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="/path/to/htmx.min.js"></script>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,9 +24,46 @@
 		<title>TrippleA - Codes</title>
 	</head>
 	<body>
+		<style>
+			.title {
+				background: linear-gradient(
+					-45deg,
+					red,
+					orange,
+					yellow,
+					green,
+					blue,
+					indigo,
+					violet
+				);
+				background-size: 400%;
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
+				animation: animate 50s linear infinite;
+			}
+
+			@keyframes animate {
+				0% {
+					background-position: 400%;
+				}
+				25% {
+					background-position: 200%;
+				}
+				50% {
+					background-position: 0%;
+				}
+				75% {
+					background-position: 200%;
+				}
+				100% {
+					background-position: 400%;
+				}
+			}
+		</style>
 		<div class="mt-5 text-center text-2xl text-stone-800 md:text-3xl">
-			<h1 style="font-family: Over the Rainbow, cursive" class="font-bold">
-				<a href="{% url 'home' %}"> Albert Ashaba Aheebwa </a>
+			<h1 style="font-family: Over the Rainbow, cursive" class="">
+				<a href="{% url 'home' %}" class="title"> Albert Ashaba Aheebwa </a>
 			</h1>
 		</div>
 		<div class="container mx-auto">
