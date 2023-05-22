@@ -7,9 +7,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+		<!-- HTMX -->
+		<script
+			src="https://unpkg.com/htmx.org@1.9.2"
+			integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
+			crossorigin="anonymous"></script>
+
 		<!-- Tailwind -->
 		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
-		<link rel="stylesheet" href="{% static 'src/styles.css' %}" />
+		<link rel="stylesheet" href="{% static 'src/css/styles.css' %}" />
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,12 +69,12 @@
 				}
 			}
 		</style>
-		<div class="mt-5 text-center text-2xl text-stone-800 md:text-3xl">
-			<h1 style="font-family: Over the Rainbow, cursive" class="">
-				<a href="{% url 'home' %}" class="title"> Albert Ashaba Aheebwa </a>
-			</h1>
-		</div>
-		<div class="container mx-auto">
+		<div class="container mx-auto" id="main">
+			<div class="mt-5 text-center text-2xl text-stone-800 md:text-3xl">
+				<h1 style="font-family: Over the Rainbow, cursive" class="">
+					<a href="{% url 'home' %}" class="title"> Albert Ashaba Aheebwa </a>
+				</h1>
+			</div>
 			<div class="px-10">
 				<!-- navbar -->
 				{% include 'partials/navbar.html' %}
