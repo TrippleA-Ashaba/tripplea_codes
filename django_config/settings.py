@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # third-party
-    # "django_browser_reload",
     # local
     "main",
 ]
@@ -139,3 +138,6 @@ if DEBUG:
     MIDDLEWARE = [
         "django_browser_reload.middleware.BrowserReloadMiddleware",
     ] + MIDDLEWARE
+    INSTALLED_APPS += [
+        "django_browser_reload",
+    ]

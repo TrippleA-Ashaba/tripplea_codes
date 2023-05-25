@@ -1,6 +1,6 @@
 <nav class="mb-5 mt-10 flex justify-between border-y py-3 text-stone-700">
 	<ul class="flex space-x-2">
-		<li class="font-semibold hover:text-black">
+		<li class="font-semibold hover:text-black dark:hover:text-white">
 			<a
 				class="cursor-pointer"
 				hx-get="{% url 'about' %}"
@@ -10,27 +10,37 @@
 				>About</a
 			>
 		</li>
+		<li class="font-semibold hover:text-black dark:hover:text-white">
+			<a
+				class="cursor-pointer"
+				hx-get="{% url 'blog' %}"
+				hx-target="#main"
+				hx-push-url="true"
+				hx-swap="outerHTML"
+				>Blog</a
+			>
+		</li>
 	</ul>
 	<ul class="flex space-x-2">
-		<li class="font-semibold hover:text-black">
+		<li class="font-semibold hover:text-black dark:hover:text-white">
 			<a href="https://medium.com/@albertashaba.a" target="_blank">Blog</a>
 		</li>
-		<li class="hover:text-black">
+		<li class="hover:text-black dark:hover:text-white">
 			<a href="https://www.instagram.com/tripplea_codes/" target="_blank"
 				><i class="ri-instagram-line"></i
 			></a>
 		</li>
-		<li class="hover:text-black">
+		<li class="hover:text-black dark:hover:text-white">
 			<a href="https://github.com/TrippleA-Ashaba" target="_blank"
 				><i class="ri-github-line"></i
 			></a>
 		</li>
-		<li class="hover:text-black">
+		<li class="hover:text-black dark:hover:text-white">
 			<a href="https://twitter.com/ashabaheebwa" target="_blank"
 				><i class="ri-twitter-line"></i
 			></a>
 		</li>
-		<li class="hover:text-black">
+		<li class="hover:text-black dark:hover:text-white">
 			<a href="https://www.linkedin.com/in/tripplea/" target="_blank"
 				><i class="ri-linkedin-box-line"></i
 			></a>
