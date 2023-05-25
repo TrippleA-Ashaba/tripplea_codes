@@ -1,22 +1,90 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %}
 
 <!--  -->
 {% block content %}
-<h1 class="text-2xl text-red-600">Blog</h1>
-<div>
-	{% for blog in blogs %}
-	<ul>
-		<li>
-			<h1>{{blog.title}}</h1>
-			<p>{{blog.pubDate}}</p>
-
-			<p>
-				<a href="{{blog.guid}}" target="_blank"> {{blog.guid}}</a>
-			</p>
-			<p>{{blog.author}}</p>
-			<img src="{{blog.thumbnail}}" alt="" />
-		</li>
-	</ul>
-	{% endfor %}
+<h1 class="mb-20 text-center text-3xl font-semibold">Latest Articles</h1>
+<div class="grid grid-cols-2 gap-6">
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
+	<div class="card">
+		<div>
+			<img class="object-fit" src="{% static 'images/projects/test.png' %}" alt="" />
+		</div>
+		<div>
+			<h1>Title here</h1>
+			<p>datepub here</p>
+		</div>
+	</div>
 </div>
+
 {% endblock content %}
