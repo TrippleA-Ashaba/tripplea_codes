@@ -4,32 +4,42 @@
 {% block content %}
 
 <h1 class="mb-20 text-center text-3xl font-semibold">Latest Articles</h1>
-<div class="grid grid-cols-2 gap-10">
+
+<!--  -->
+{% if blogs %}
+<div class="grid grid-cols-2 gap-20">
+	{% for blog in blogs %}
 	<div
-		class="rounded-lg p-6 shadow-md shadow-stone-700 transition-all delay-100 duration-1000 ease-in-out hover:scale-105 hover:bg-gradient-to-r hover:from-green-800 hover:to-blue-800 hover:bg-clip-text hover:text-transparent">
+		class="rounded-lg p-6 shadow-md shadow-stone-700 transition-all delay-100 duration-1000 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-stone-700 dark:hover:shadow-stone-300">
 		<div class="card">
-			<div class="flex flex-col justify-end">
+			<div class="relative flex flex-col justify-end">
 				<div class="-mt-12 mb-5">
 					<img
 						class="object-fit rounded-md shadow-lg shadow-stone-500"
-						src="{% static 'images/projects/test.png' %}"
+						src="{{blog.thumbnail}}"
 						alt="" />
 				</div>
 				<div>
-					<h1 class="mb-3 text-justify text-lg font-bold">
-						<a class="after:absolute after:inset-0" href="" target="_blank">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. corrupti
-							possimus inventore excepturi.
+					<h1
+						class="mb-3 text-justify text-lg font-bold hover:text-indigo-800 dark:hover:text-indigo-600">
+						<a
+							class="after:absolute after:inset-0"
+							href="{{blog.guid}}"
+							target="_blank">
+							{{blog.title}}
 						</a>
 					</h1>
 
-					<p class="text-right align-middle text-sm font-thin text-gray-800">
-						<i class="ri-time-line"></i>datepub here
+					<p class="text-right text-xs font-thin text-gray-800 dark:text-gray-500">
+						<i class="ri-time-line"></i>{{blog.pubDate}}
 					</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	{% endfor %}
 </div>
+{% endif %}
+<!--  -->
 
 {% endblock content %}
