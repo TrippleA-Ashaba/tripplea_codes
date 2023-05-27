@@ -11,7 +11,8 @@ def get_blogs():
     """Return a list of Dictionary blog entries"""
 
     r = requests.get(
-        f"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@albertashaba.a&api_key={API_KEY}"
+        f"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@albertashaba.a&api_key={API_KEY}",
+        timeout=10,
     )
     data = r.json().get("items")
 
