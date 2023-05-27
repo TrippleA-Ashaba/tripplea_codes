@@ -579,6 +579,16 @@ video {
   margin-bottom: 8rem;
 }
 
+.my-96 {
+  margin-top: 24rem;
+  margin-bottom: 24rem;
+}
+
+.my-52 {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+}
+
 .-mt-12 {
   margin-top: -3rem;
 }

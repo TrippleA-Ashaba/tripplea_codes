@@ -1,3 +1,5 @@
+{% load static %}
+
 <nav class="mb-5 mt-10 flex justify-between border-y py-3 text-stone-500">
 	<ul class="flex space-x-2">
 		<li class="font-semibold hover:text-black dark:hover:text-white">
@@ -7,6 +9,7 @@
 				hx-push-url="true"
 				hx-swap="outerHTML"
 				hx-target="#main"
+				hx-indicator="#indicator"
 				>About</a
 			>
 		</li>
@@ -17,10 +20,12 @@
 				hx-target="#main"
 				hx-push-url="true"
 				hx-swap="outerHTML"
+				hx-indicator="#indicator"
 				>Blog</a
 			>
 		</li>
 	</ul>
+
 	<ul class="flex space-x-2">
 		<li class="font-semibold hover:text-black dark:hover:text-white">
 			<a href="https://medium.com/@albertashaba.a" target="_blank">
@@ -49,3 +54,11 @@
 		</li>
 	</ul>
 </nav>
+<!--  -->
+<img
+	id="indicator"
+	class="htmx-indicator mx-auto"
+	src="{% static 'images/loader.svg' %}"
+	alt=""
+	srcset="" />
+<!--  -->
