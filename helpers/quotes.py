@@ -1,6 +1,6 @@
 import random
 
-quotes = [
+QUOTES = (
     {
         "author": "Maya Angelou",
         "quote": "You can't use up creativity. The more you use, the more you have.",
@@ -25,7 +25,15 @@ quotes = [
         "author": "Frederick Brooks",
         "quote": "The hardest single part of building a software system is deciding precisely what to build.",
     },
-]
+    {
+        "author": "NATO summit 1968 - the software crisis",
+        "quote": "We build systems like the Wright brothers built airplanes—build the whole thing, push it off the cliff, let it crash, and start over again.",
+    },
+    {
+        "author": "Donald Knuth",
+        "quote": "Beware of bugs in the above code; I have only proved it correct, not tried it.",
+    },
+)
 
 
 def get_quote():
@@ -38,7 +46,7 @@ def get_quote():
 
     """
 
-    quote = random.choice(quotes)
+    quote = random.choice(QUOTES)
     author = quote["author"]
     say = quote["quote"]
     return author, say
